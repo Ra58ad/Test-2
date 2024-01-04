@@ -6,5 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const response = await fetch(`https://api.github.com/users/${username}`)
         const data = await response.json()
         console.log(data)
+        const createCard = (data) => `
+<div>
+  test
+</div>
+`
+const card = createCard(data) 
     })
 })
